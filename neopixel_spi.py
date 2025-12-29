@@ -1,6 +1,7 @@
 # Simple Neopixel library on SPI
 # must be set SPI clock to 3.2MHz for 800kHz neopixel
 # b1000 for 0,  b1110 for 1. It saves memory.
+# W600 Pico board need SPI option "phase=1"
 
 import struct
 

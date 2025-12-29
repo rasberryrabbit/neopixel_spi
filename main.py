@@ -5,7 +5,7 @@ import network, random
 
 from neopixel_spi import NeoPixel_SPI
 
-# 800kHz * 8 / 2 = 3.2MHz, on ESP32
+# 800kHz * 8 / 2 = 3.2MHz, on ESP32. some board need "phase=1" on SPI option.
 spi=SPI(1, 3200000, sck=Pin(14), mosi=Pin(13))
 
 neo = NeoPixel_SPI(spi,8)
